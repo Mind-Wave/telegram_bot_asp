@@ -17,6 +17,11 @@ namespace TelegramBotAsp.Commands
         /// </value>
         public override string Name => "hello";
 
+        /// <summary>
+        /// The command sends a welcome message
+        /// </summary>
+        /// <param name="message">The message.</param>
+        /// <param name="client">The client.</param>
         public override void Execute(Message message, TelegramBotClient client)
         {
             //The chat ID determines from which chat the message came, respectively, to which chat to send a response
