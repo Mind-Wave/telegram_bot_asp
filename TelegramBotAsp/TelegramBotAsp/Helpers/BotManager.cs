@@ -47,7 +47,8 @@ namespace TelegramBotAsp.Helpers
             //Add all new commands here
             Commands = new List<CommandBase>()
             {
-
+                new HelloCommand(),
+                new StartCommand()
             };
 
             //Telegram bot webhook
