@@ -52,7 +52,7 @@ namespace TelegramBotAsp.Helpers
 
             //Telegram bot webhook
             //Telegram will notify the application about new messages via this link
-            string hookLink = $"";
+            string hookLink = $"{BotSettings.BotUrl}{Routes.MessageController}";
             _client.SetWebhookAsync(hookLink);
         }
     }
