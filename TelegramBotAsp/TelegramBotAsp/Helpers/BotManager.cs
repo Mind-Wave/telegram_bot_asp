@@ -7,7 +7,7 @@ namespace TelegramBotAsp.Helpers
     /// <summary>
     /// Managing the bot client and bot commands
     /// </summary>
-    public static class BotClientManager
+    public static class BotManager
     {
         private static TelegramBotClient _client;
 
