@@ -38,6 +38,7 @@ namespace TelegramBotAsp.Helpers
         /// </summary>
         public static void Initial()
         {
+            //Initial client
             _client = new TelegramBotClient(BotSettings.TelegramBotKey);
 
             //Add all new commands here
@@ -46,6 +47,8 @@ namespace TelegramBotAsp.Helpers
 
             };
 
+            //Telegram bot webhook
+            //Telegram will notify the application about new messages via this link
             string hookLink = $"";
             _client.SetWebhookAsync(hookLink);
         }
