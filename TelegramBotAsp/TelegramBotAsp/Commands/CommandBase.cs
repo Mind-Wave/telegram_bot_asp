@@ -39,7 +39,7 @@ namespace TelegramBotAsp.Commands
         /// </summary>
         /// <param name="commandTextToCheck">The command text to check.</param>
         /// <returns></returns>
-        public bool CheckPersonalCommand(string commandTextToCheck)
+        public static bool CheckPersonalCommand(string commandTextToCheck)
         {
             return commandTextToCheck.Contains(BotSettings.BotName);
         }
