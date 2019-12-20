@@ -1,5 +1,8 @@
 ﻿namespace TelegramBotAsp.Helpers
 {
+    /// <summary>
+    /// Telegram bot info
+    /// </summary>
     public static class BotSettings
     {
         /// <summary>
