@@ -27,7 +27,7 @@ namespace TelegramBotAsp.Controllers
                 if (command.CheckCommandContains(msg.Text))
                 {
                     //If the message contains a command, then perform the action according to this command
-                    command.Execute(msg, BotManager.GetClient());
+                    command.Execute(msg, BotManager.Client);
                     break;
                 }
             }

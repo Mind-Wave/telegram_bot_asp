@@ -23,14 +23,17 @@ namespace TelegramBotAsp.Helpers
         /// Gets the bot client.
         /// </summary>
         /// <returns></returns>
-        public static TelegramBotClient GetClient()
+        public static TelegramBotClient Client
         {
-            if (_client == null)
+            get
             {
-                Initial();
-            }
+                if (_client == null)
+                {
+                    Initial();
+                }
 
-            return _client;
+                return _client;
+            }
         }
 
         /// <summary>
